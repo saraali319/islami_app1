@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islamy_app/ui/home/home_screen.dart';
+import 'package:islamy_app/ui/introduction/intro_screen.dart';
 import 'package:islamy_app/utils/routes.dart';
 
 void main(){
@@ -11,9 +12,10 @@ class MyApp extends StatelessWidget{
 return MaterialApp(
   debugShowCheckedModeBanner: false,
   routes: {
+    AppRoutes.introRouteName:(context)=>IntroScreen(),
     AppRoutes.homeRouteName:(context)=>HomeScreen()
   },
-  initialRoute: AppRoutes.homeRouteName,
+  initialRoute: AppRoutes.introRouteName,
 );
   }
 
