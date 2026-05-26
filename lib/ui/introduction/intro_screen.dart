@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:animate_do/animate_do.dart';
+
+import '../../utils/routes.dart';
 class IntroScreen extends StatefulWidget {
   @override
   State<IntroScreen> createState() => _IntroScreenState();
@@ -10,7 +12,7 @@ class _IntroScreenState extends State<IntroScreen> {
   void initState() {
     super.initState();
     Future.delayed(Duration(seconds: 3),(){
-      Navigator.pushReplacementNamed(context, 'home');
+      Navigator.pushNamed(context, AppRoutes.onBoardingRouteName);
 
     });
 

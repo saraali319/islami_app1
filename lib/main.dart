@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:islamy_app/ui/home/home_screen.dart';
 import 'package:islamy_app/ui/introduction/intro_screen.dart';
+import 'package:islamy_app/ui/introduction/on_boarding_screen.dart';
 import 'package:islamy_app/utils/routes.dart';
 
 void main(){
@@ -13,7 +14,8 @@ return MaterialApp(
   debugShowCheckedModeBanner: false,
   routes: {
     AppRoutes.introRouteName:(context)=>IntroScreen(),
-    AppRoutes.homeRouteName:(context)=>HomeScreen()
+    AppRoutes.homeRouteName:(context)=>HomeScreen(),
+    AppRoutes.onBoardingRouteName:(context)=>OnBoardingScreen(),
   },
   initialRoute: AppRoutes.introRouteName,
 );
