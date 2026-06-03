@@ -2,6 +2,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 
+import '../../utils/routes.dart';
+
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});
 
@@ -90,7 +92,7 @@ class OnBoardingScreen extends StatelessWidget {
 
                   PageViewModel(
                     decoration: pageDecoration,
-                    title: "Reading the Quran",
+                    title: "Reading the quran",
                     body:
                     "Read, and your Lord is the Most Generous",
                     image: buildImage(
@@ -110,16 +112,18 @@ class OnBoardingScreen extends StatelessWidget {
 
                   PageViewModel(
                     decoration: pageDecoration,
-                    title: "Holy Quran Radio",
+                    title: "Holy quran Radio",
                     body:
-                    "You can listen to the Holy Quran Radio through the application for free and easily",
+                    "You can listen to the Holy quran Radio through the application for free and easily",
                     image: buildImage(
                       'assets/images/image5.png',
                     ),
                   ),
                 ],
 
-                onDone: () {},
+                onDone: () {
+                  Navigator.pushNamed(context, AppRoutes.homeRouteName);
+                },
 
                 onSkip: () {},
 
